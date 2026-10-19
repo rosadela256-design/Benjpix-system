@@ -1,0 +1,3 @@
+# Uploaded files must only be served through staff/file.php (which checks login).
+Require all denied
+php_flag engine off

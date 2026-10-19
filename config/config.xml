@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <shop>
+        <name>benjpix</name>
+        <tagline>photo and video services</tagline>
+        <address>[insert shop address]</address>
+    </shop>
+    <!--
+      mode = "booking"  -> customer picks a date/time (photo shoots, videography)
+      mode = "request"  -> customer drops off a file/details, no fixed time (printing, editing)
+    -->
+    <services>
+        <service><name>Photo shoot</name><mode>booking</mode><note>Portrait, ID, or event photography</note></service>
+        <service><name>Event videography</name><mode>booking</mode><note>Coverage for events and occasions</note></service>
+        <service><name>Printing</name><mode>request</mode><note>Photo and document printing</note></service>
+        <service><name>Photo/video editing</name><mode>request</mode><note>Retouching, restoration, and edits</note></service>
+    </services>
+    <uploads>
+        <!-- comma separated, no dots -->
+        <allowed_ext>jpg,jpeg,png,pdf,docx,mp4,mov</allowed_ext>
+        <max_size_mb>50</max_size_mb>
+    </uploads>
+    <gallery>
+        <!-- Swap the file names for real photos/stills of your own work.
+             Drop new images into assets/img/gallery/ and list them here (20 shown by default). -->
+        <item><file>sample-1.jpg</file><caption>Wedding portrait</caption></item>
+        <item><file>sample-2.jpg</file><caption>ID photo set</caption></item>
+        <item><file>sample-3.jpg</file><caption>Event coverage</caption></item>
+        <item><file>sample-4.jpg</file><caption>Birthday photo</caption></item>
+        <item><file>sample-5.jpg</file><caption>Photo booth</caption></item>
+        <item><file>sample-6.jpg</file><caption>Videography</caption></item>
+        <item><file>sample-7.jpg</file><caption>Couple shoot</caption></item>
+        <item><file>sample-8.jpg</file><caption>Birthday coverage</caption></item>
+        <item><file>sample-9.jpg</file><caption>ID photo</caption></item>
+        <item><file>sample-10.jpg</file><caption>Cinematic photo</caption></item>
+        <item><file>sample-11.jpg</file><caption>Photo booth</caption></item>
+        <item><file>sample-12.jpg</file><caption>Family portrait</caption></item>
+        <item><file>sample-13.jpg</file><caption>Corporate headshots</caption></item>
+        <item><file>sample-14.jpg</file><caption>Birthday coverage</caption></item>
+        <item><file>sample-15.jpg</file><caption>Photo booth</caption></item>
+        <item><file>sample-16.jpg</file><caption>Birthday Video Shoot</caption></item>
+        <item><file>sample-17.jpg</file><caption>Photo booth</caption></item>
+        <item><file>sample-18.jpg</file><caption>Debut coverage</caption></item>
+        <item><file>sample-19.jpg</file><caption>Wedding shot</caption></item>
+        <item><file>sample-20.jpg</file><caption>Portrait</caption></item>
+    </gallery>
+    <statuses>
+        <status>Pending</status>
+        <status>Processing</status>
+        <status>Ready</status>
+        <status>Completed</status>
+    </statuses>
+</config>

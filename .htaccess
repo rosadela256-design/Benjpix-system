@@ -1,0 +1,6 @@
+# Raise PHP upload limits above the 10MB configured in config/config.xml.
+# (Apache + mod_php only; XAMPP running php-cgi/FPM uses .user.ini below instead.)
+<IfModule mod_php.c>
+    php_value upload_max_filesize 12M
+    php_value post_max_size 14M
+</IfModule>
